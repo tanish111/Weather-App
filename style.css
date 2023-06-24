@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #weatherInfo {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #cityName {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #temperature,
+  #humidity,
+  #time {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .forecast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .forecast-table th,
+  .forecast-table td {
+    padding: 10px;
+    text-align: center; 
+    white-space: nowrap; /* Prevent table cells from wrapping */
+    overflow: hidden; /* Hide any overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis (...) for truncated text */
+  }
+  
+  .forecast-table th {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  /* Responsive styles */
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 8px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+    
+    .forecast-table th,
+    .forecast-table td {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .container {
+      padding: 3px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .forecast-table th,
+    .forecast-table td {
+      padding: 3px;
+      font-size: 12px;
+    }
+  }
+  
